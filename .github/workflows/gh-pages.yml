@@ -31,4 +31,4 @@ jobs:
           publish_dir: ./build
           publish_branch: gh-pages
           force_orphan: true
-          cname: mocha-bot.chroma-gaming.xyz
+          cname: mocha-docs.chroma-gaming.xyz
