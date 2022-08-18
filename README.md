@@ -1,41 +1,7 @@
-# Website
+## Mocha - Documentation
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+### Drink mocha with people across the universe :rocket:
 
-### Installation
+Mocha is a bot for multi-chat cross-server, This bot allows you to send messages to multiple channels at once. You can create a private or public channel and send messages to it. The bot also filters out messages from prohibits mentions
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+<a href="https://www.producthunt.com/posts/mocha-bot?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mocha&#0045;bot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=356358&theme=light" alt="Mocha&#0032;Bot - Drink&#0032;mocha&#0032;with&#0032;people&#0032;across&#0032;the&#0032;universe | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
