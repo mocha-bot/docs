@@ -53,12 +53,12 @@ const config = {
         title: 'Mocha Bot',
         logo: {
           alt: 'Mocha Bot',
-          src: 'img/logo.png',
+          src: 'img/logo.webp',
         },
         items: [
           {
             href: 'https://mocha.chroma-gaming.xyz',
-            position: 'left',
+            position: 'right',
             label: 'Website',
           },
           {
@@ -70,30 +70,6 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.chroma-gaming.xyz',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Website',
-                href: 'https://mocha.chroma-gaming.xyz',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/mocha-bot',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Mocha Bot, Inc. Built with Docusaurus.`,
       },
       prism: {
