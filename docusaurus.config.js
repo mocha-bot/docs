@@ -53,7 +53,7 @@ const config = {
         title: 'Mocha Bot',
         logo: {
           alt: 'Mocha Bot',
-          src: 'img/logo.webp',
+          src: 'img/logo-mocha.svg',
         },
         items: [
           {
