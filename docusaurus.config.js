@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Mocha Bot Documentation',
   tagline: 'Drink mocha with people across the universe',
-  url: 'https://mocha-docs.chroma-gaming.xyz/',
+  url: 'https://docs.mocha-bot.xyz/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -57,7 +57,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://mocha.chroma-gaming.xyz',
+            href: 'https://mocha-bot.xyz',
             position: 'right',
             label: 'Website',
           },
