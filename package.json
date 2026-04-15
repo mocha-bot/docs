@@ -47,5 +47,8 @@
   },
   "overrides": {
     "webpack": "~5.100.0"
+  },
+  "resolutions": {
+    "webpack": "~5.100.0"
   }
 }
