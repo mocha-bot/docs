@@ -10,17 +10,26 @@ Let's discover **Mocha in less than 5 minutes**.
 
 Mocha is a Discord bot that links channels across different servers into **rooms**. Anything posted in one channel is broadcast to every other channel in the room — including edits, deletes, replies, pins, attachments, stickers, and typing indicators. See [Rooms Overview](/rooms/overview) for the concept.
 
-## Getting Started
+## New here? Start with the tutorials.
 
-Invite the bot to your server from **[mocha-bot.xyz](https://mocha-bot.xyz)**, then in any channel run:
+If this is your first time with Mocha, skip the reference docs and follow the step-by-step walkthroughs in order:
+
+1. [Getting Started](/tutorials/getting-started) — invite the bot, create your first room, run a basic check.
+2. [Connect two servers](/tutorials/connect-two-servers) — bridge two Discord servers end-to-end.
+3. [Share a room via invitation](/tutorials/share-via-invite) — create codes so people can join without sharing IDs.
+4. [Curate your room](/tutorials/curate-your-room) — edit details, kick channels, manage rooms.
+
+## Quick start
+
+If you already know your way around Discord bots, the 30-second version is:
 
 ```md
-  room create
+  /room create
 ```
 
-That channel is now the owner of a new room. Share the resulting room ID (or an [invitation code](/rooms/invitations)) with friends so their channels can `room join`.
+That channel is now the owner of a new room. Share its ID (or an [invitation code](/rooms/invitations)) and other channels can `/room join` it.
 
-### Learn more
+## Reference
 
 - [Commands](/category/commands) — every slash command Mocha understands.
 - [Chat](/category/chat) — how messages, edits, replies, pins, mentions, and `!tmp` work.
@@ -33,4 +42,4 @@ If you're having issues with the bot, check the [Frequent Searches](/others/freq
 
 ## Making suggestions
 
-Use the [`feedback`](/commands/feedback) slash command from any server the bot is in, or drop a message in the [support server](https://discord.mocha-bot.xyz/).
+Use the [`/feedback`](/commands/feedback) slash command from any server the bot is in, or drop a message in the [support server](https://discord.mocha-bot.xyz/).

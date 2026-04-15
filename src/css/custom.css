@@ -1,30 +1,315 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Mocha docs theme — mirrors the land site (mocha-bot.xyz):
+ * pure black background, white text, Plus Jakarta Sans, glass accents,
+ * dark-only (no light toggle).
  */
 
-/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --mocha-bg: #000000;
+  --mocha-surface: rgba(255, 255, 255, 0.04);
+  --mocha-surface-strong: rgba(255, 255, 255, 0.08);
+  --mocha-border: rgba(255, 255, 255, 0.12);
+  --mocha-border-strong: rgba(255, 255, 255, 0.2);
+  --mocha-text: #ffffff;
+  --mocha-text-muted: #adadad;
+  --mocha-accent: #ffd700;
+
+  --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system,
+    'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo,
+    Consolas, Liberation Mono, monospace;
+  --ifm-heading-font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --ifm-heading-font-weight: 700;
+  --ifm-font-weight-semibold: 600;
+
+  --ifm-background-color: var(--mocha-bg);
+  --ifm-background-surface-color: var(--mocha-bg);
+  --ifm-color-content: var(--mocha-text);
+  --ifm-color-content-secondary: var(--mocha-text-muted);
+
+  --ifm-color-primary: #ffd700;
+  --ifm-color-primary-dark: #e6c200;
+  --ifm-color-primary-darker: #d9b800;
+  --ifm-color-primary-darkest: #b39700;
+  --ifm-color-primary-light: #ffdc1f;
+  --ifm-color-primary-lighter: #ffe033;
+  --ifm-color-primary-lightest: #ffe866;
+
+  --ifm-link-color: var(--mocha-accent);
+  --ifm-link-hover-color: #ffe866;
+  --ifm-menu-color: rgba(255, 255, 255, 0.75);
+  --ifm-menu-color-active: var(--mocha-text);
+  --ifm-menu-color-background-active: var(--mocha-surface);
+  --ifm-menu-color-background-hover: var(--mocha-surface);
+
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.7);
+  --ifm-navbar-link-color: rgba(255, 255, 255, 0.7);
+  --ifm-navbar-link-hover-color: var(--mocha-text);
+  --ifm-navbar-search-input-background-color: var(--mocha-surface);
+  --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.5);
+
+  --ifm-footer-background-color: #000000;
+  --ifm-footer-color: var(--mocha-text-muted);
+  --ifm-footer-link-color: rgba(255, 255, 255, 0.75);
+
+  --ifm-toc-border-color: var(--mocha-border);
+  --ifm-table-border-color: var(--mocha-border);
+  --ifm-table-stripe-background: var(--mocha-surface);
+  --ifm-hr-border-color: var(--mocha-border);
+  --ifm-blockquote-color: var(--mocha-text-muted);
+  --ifm-blockquote-border-color: var(--mocha-accent);
+
+  --ifm-code-background: var(--mocha-surface);
+  --ifm-code-color: #ffe880;
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 215, 0, 0.12);
+
+  --ifm-breadcrumb-color-active: var(--mocha-accent);
+  --ifm-breadcrumb-item-background-active: var(--mocha-surface);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Force dark; ignore light palette entirely. */
+[data-theme='light'],
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: var(--mocha-bg) !important;
+  color: var(--mocha-text);
+  font-family: var(--ifm-font-family-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Navbar: glass-on-black with blur, like the land header. */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--mocha-border);
+}
+
+.navbar__title,
+.navbar__link {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar__link:hover,
+.navbar__title:hover {
+  color: var(--mocha-text);
+}
+
+.navbar__brand:hover {
+  color: var(--mocha-text);
+}
+
+/* Sidebar */
+.menu {
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+
+.menu__link {
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu__link:hover {
+  background-color: var(--mocha-surface);
+  color: var(--mocha-text);
+}
+
+.menu__link--active {
+  background-color: var(--mocha-surface-strong);
+  color: var(--mocha-text);
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: var(--mocha-surface);
+}
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--mocha-border) !important;
+}
+
+/* Main content surface */
+main {
+  background-color: transparent;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  color: var(--mocha-text);
+  font-family: var(--ifm-heading-font-family);
+  letter-spacing: -0.01em;
+}
+
+.markdown h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.markdown h2 {
+  border-bottom: 1px solid var(--mocha-border);
+  padding-bottom: 0.4em;
+}
+
+.markdown a {
+  color: var(--mocha-accent);
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  color: #ffe866;
+  text-decoration: underline;
+}
+
+/* Tables — glass card look */
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--mocha-surface);
+  border: 1px solid var(--mocha-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.markdown table thead {
+  background: var(--mocha-surface-strong);
+}
+
+.markdown table th,
+.markdown table td {
+  border: none;
+  border-bottom: 1px solid var(--mocha-border);
+  padding: 0.75rem 1rem;
+  color: var(--mocha-text);
+}
+
+.markdown table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.markdown table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Inline code */
+.markdown code:not([class*='language-']) {
+  background: var(--mocha-surface-strong);
+  border: 1px solid var(--mocha-border);
+  border-radius: 6px;
+  padding: 0.1em 0.4em;
+  color: #ffe880;
+}
+
+/* Code blocks */
+.theme-code-block {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid var(--mocha-border);
+  border-radius: 12px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset;
+}
+
+div[class*='codeBlockContainer'] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid var(--mocha-border);
+  border-radius: 12px;
+}
+
+/* Admonitions: keep text readable on dark */
+.alert {
+  background: var(--mocha-surface);
+  border: 1px solid var(--mocha-border);
+  border-left: 3px solid var(--mocha-accent);
+  border-radius: 12px;
+  color: var(--mocha-text);
+}
+
+/* Pagination nav (Previous / Next) — glass cards */
+.pagination-nav__link {
+  background: var(--mocha-surface);
+  border: 1px solid var(--mocha-border);
+  border-radius: 12px;
+  color: var(--mocha-text);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--mocha-border-strong);
+  background: var(--mocha-surface-strong);
+}
+
+.pagination-nav__sublabel {
+  color: var(--mocha-text-muted);
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: var(--mocha-surface);
+  color: var(--mocha-text);
+}
+
+/* TOC (right rail) */
+.table-of-contents {
+  border-left: 1px solid var(--mocha-border);
+}
+
+.table-of-contents__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--mocha-accent);
+}
+
+/* Footer */
+.footer {
+  background-color: #000000;
+  border-top: 1px solid var(--mocha-border);
+}
+
+.footer__copyright {
+  color: var(--mocha-text-muted);
+}
+
+/* Hide any leftover light-mode toggle */
+.navbar__items [class*='toggle'] {
+  display: none !important;
+}
+
+/* Scrollbar (webkit only) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mocha-border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mocha-border-strong);
 }

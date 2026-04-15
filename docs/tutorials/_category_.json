@@ -1,0 +1,8 @@
+{
+  "label": "Tutorials",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Step-by-step walkthroughs that take you from inviting the bot to running a multi-server community."
+  }
+}
