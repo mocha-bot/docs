@@ -1,5 +1,13 @@
 ---
 sidebar_position: 3
+title: Share a Mocha Room via Invitation
+description: Generate invitation codes with custom aliases, usage limits, and expirations, share them with anyone, and let them join your Mocha room without copying IDs and passwords.
+keywords:
+  - mocha invitation
+  - discord room invite
+  - invite code
+  - room invite alias
+  - mocha share room
 ---
 
 # Share a Room via Invitation

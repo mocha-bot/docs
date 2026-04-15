@@ -1,5 +1,13 @@
 ---
 sidebar_position: 1
+title: Messages, Formatting, and Mentions
+description: How Mocha relays messages across Discord servers — supported formatting, images, links, stickers, edits, deletes, and the #(Server) and !tmp prefix tricks.
+keywords:
+  - mocha messages
+  - discord message formatting
+  - discord cross server chat
+  - temporary messages
+  - server mentions
 ---
 
 # Messages

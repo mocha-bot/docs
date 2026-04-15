@@ -1,5 +1,12 @@
 ---
 sidebar_position: 3
+title: Room Personalization
+description: Personalization relays messages through per-channel webhooks so each user's real avatar and display name appear on every bridged server. Learn how to enable it.
+keywords:
+  - mocha personalization
+  - discord webhook
+  - custom avatar
+  - cross server user
 ---
 
 # Personalization

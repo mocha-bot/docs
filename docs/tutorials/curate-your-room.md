@@ -1,5 +1,13 @@
 ---
 sidebar_position: 4
+title: Curate and Moderate Your Mocha Room
+description: Manage a busy Mocha room end-to-end — edit details, inspect connected channels, kick misbehaving servers, enable personalization, leave ratings, and safely delete the room.
+keywords:
+  - moderate discord room
+  - manage mocha room
+  - kick discord channel
+  - mocha personalization
+  - discord room admin
 ---
 
 # Curate Your Room

@@ -1,5 +1,13 @@
 ---
 sidebar_position: 1
+title: Rooms Overview
+description: A Mocha room is a bridge that links Discord channels across different servers. Learn the properties, feature flags, and lifecycle of public and private rooms.
+keywords:
+  - mocha rooms
+  - discord rooms
+  - private room
+  - public room
+  - room feature flags
 ---
 
 # Overview

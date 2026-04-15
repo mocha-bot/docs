@@ -1,5 +1,11 @@
 ---
 sidebar_position: 2
+title: Mocha Room Page
+description: Every public Mocha room has a page at mocha-bot.xyz/room/slug showing description, rating, tags, and a join modal with the room code you paste into Discord.
+keywords:
+  - room page
+  - mocha room
+  - join room code
 ---
 
 # Room Page
