@@ -1,5 +1,13 @@
 ---
 sidebar_position: 1
+title: Getting Started with Mocha
+description: Invite the Mocha Discord bot to your server, configure the right permissions, create your first cross-server room, and verify the setup — all in under five minutes.
+keywords:
+  - mocha getting started
+  - invite mocha bot
+  - discord bot setup
+  - create discord room
+  - mocha permissions
 ---
 
 # Getting Started

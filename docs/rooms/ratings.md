@@ -1,5 +1,11 @@
 ---
 sidebar_position: 4
+title: Room Ratings
+description: Rate Mocha rooms from 1 to 5 stars — one vote per user per room — and see how ratings surface in /room info and the public directory.
+keywords:
+  - room rating
+  - mocha ratings
+  - discord room stars
 ---
 
 # Ratings

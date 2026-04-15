@@ -1,5 +1,13 @@
 ---
 sidebar_position: 2
+title: Connect Two Discord Servers
+description: A complete walkthrough for bridging two Discord servers with Mocha — create a room on one side, join from the other, send test messages, and troubleshoot common permission issues.
+keywords:
+  - discord cross server chat
+  - bridge discord servers
+  - connect two discord servers
+  - mocha room tutorial
+  - discord multi server bot
 ---
 
 # Connect Two Servers

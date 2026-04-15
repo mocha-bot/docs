@@ -1,5 +1,12 @@
 ---
 sidebar_position: 2
+title: Replies and Pins Across Servers
+description: How Mocha mirrors Discord replies with correct threading and pin actions across every channel in a room, plus the caveats around cache TTL and permissions.
+keywords:
+  - discord reply threading
+  - pinned messages
+  - mocha replies
+  - cross-server replies
 ---
 
 # Replies & Pins

@@ -1,5 +1,11 @@
 ---
 sidebar_position: 3
+title: Typing Indicators
+description: Mocha forwards Discord typing indicators between every channel in a room so conversations feel native across servers. Here is exactly how it works and why loops don't form.
+keywords:
+  - discord typing indicator
+  - mocha typing
+  - cross-server typing
 ---
 
 # Typing Indicators

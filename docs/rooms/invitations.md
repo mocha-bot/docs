@@ -1,5 +1,12 @@
 ---
 sidebar_position: 2
+title: Room Invitations
+description: Everything about Mocha invitation codes — aliases, max usage, expiration choices, redemption flow, and the feature gates that control which options your plan unlocks.
+keywords:
+  - room invitation
+  - invitation code
+  - room alias
+  - mocha invite
 ---
 
 # Invitations

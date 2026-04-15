@@ -1,5 +1,11 @@
 ---
 sidebar_position: 1
+title: "/help — Mocha Bot Command"
+description: The /help slash command shows the list of available Mocha commands and a quick link to mocha-bot.xyz. Use it to verify the bot is alive and find command names.
+keywords:
+  - /help command
+  - mocha help
+  - discord bot help
 ---
 
 # Help

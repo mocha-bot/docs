@@ -1,5 +1,12 @@
 ---
 sidebar_position: 3
+title: "/feedback — Send Feedback to Mocha Developers"
+description: Use the /feedback slash command to send bug reports, suggestions, and feature requests directly to the Mocha developers from any Discord server.
+keywords:
+  - /feedback command
+  - mocha bug report
+  - mocha feature request
+  - discord bot feedback
 ---
 
 # Feedback

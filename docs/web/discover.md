@@ -1,5 +1,12 @@
 ---
 sidebar_position: 1
+title: Discover Public Mocha Rooms
+description: Browse the public Mocha room directory at mocha-bot.xyz/search — filter by rating, channel count, and tags, and jump into a room with one tap.
+keywords:
+  - discover discord rooms
+  - public discord rooms
+  - mocha directory
+  - find discord room
 ---
 
 # Discover Rooms

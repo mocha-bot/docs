@@ -1,5 +1,14 @@
 ---
 sidebar_position: 3
+title: Mocha Pricing and Plans
+description: Mocha is free to use. Compare the Starter, Premium, and Pro plans to see which features — edit windows, personalization, room limits, and statistics — each plan unlocks.
+keywords:
+  - mocha pricing
+  - mocha plans
+  - starter plan
+  - premium plan
+  - pro plan
+  - discord bot pricing
 ---
 
 # Pricing

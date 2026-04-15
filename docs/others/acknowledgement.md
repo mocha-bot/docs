@@ -1,5 +1,11 @@
 ---
 sidebar_position: 1
+title: Acknowledgements
+description: Mocha is built on top of open-source projects including DiscordGo, Echo, GORM, Asynq, Meilisearch, Next.js, and Docusaurus. Thanks to every maintainer and contributor.
+keywords:
+  - mocha credits
+  - open source
+  - acknowledgements
 ---
 
 # Acknowledgement

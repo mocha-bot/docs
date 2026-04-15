@@ -1,5 +1,14 @@
 ---
 sidebar_position: 2
+title: "/room — Mocha Bot Commands Reference"
+description: Full reference for the /room slash command and its subcommands — create, join, disconnect, switch, info, and invite — with every parameter and option.
+keywords:
+  - /room command
+  - mocha room
+  - room create
+  - room join
+  - room invite
+  - discord slash command
 ---
 
 # Room

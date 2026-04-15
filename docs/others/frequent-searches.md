@@ -1,5 +1,12 @@
 ---
 sidebar_position: 2
+title: Mocha FAQ — Frequent Searches
+description: Answers to the most common Mocha questions — inviting the bot, creating private rooms, temporary messages, sync windows, invitations, and ratings.
+keywords:
+  - mocha faq
+  - frequent questions
+  - mocha help
+  - discord bot faq
 ---
 
 # Frequent Searches
