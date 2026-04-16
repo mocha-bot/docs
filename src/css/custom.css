@@ -295,6 +295,47 @@ div[class*='codeBlockContainer'] {
   display: none !important;
 }
 
+/* Code copy button — visible by default on the dark glass background. */
+.theme-code-block button[class*='copyButton'],
+.theme-code-block button.clean-btn[class*='copyButton'] {
+  background: var(--mocha-surface) !important;
+  border: 1px solid var(--mocha-border-strong) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-radius: 8px;
+  opacity: 1;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.theme-code-block button[class*='copyButton']:hover {
+  border-color: var(--mocha-accent) !important;
+  background: rgba(255, 215, 0, 0.08) !important;
+  color: var(--mocha-accent) !important;
+}
+
+.theme-code-block button[class*='copyButtonCopied'] {
+  border-color: var(--mocha-accent) !important;
+  color: var(--mocha-accent) !important;
+  background: rgba(255, 215, 0, 0.12) !important;
+}
+
+/* "Last updated" line — muted foot of each doc page. */
+.theme-last-updated {
+  color: var(--mocha-text-muted);
+  font-size: 0.85rem;
+}
+
+.theme-last-updated b {
+  color: var(--mocha-text);
+  font-weight: 600;
+}
+
+/* Blog (changelog) — match the docs card surface. */
+.blogPostTitle_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Title-styles-module,
+article.blog-post h2 a {
+  color: var(--mocha-text);
+}
+
 /* Scrollbar (webkit only) */
 ::-webkit-scrollbar {
   width: 10px;

@@ -30,6 +30,10 @@ The room owner can toggle the flag later. Personalization requires the **Persona
 - If the webhook is missing (for example, because the server didn't grant **Manage Webhooks**), Mocha falls back to a normal bot message with the standard `[ Server ][ user ] >>` prefix — nothing is lost.
 - When a channel disconnects, its webhook is deleted.
 
+:::note Needs "Manage Webhooks"
+Personalization only works on servers where Mocha was granted **Manage Webhooks**. The fallback keeps the room functional for servers that didn't grant it, but those channels won't show per-user avatars. There's no warning — if you're running a mixed room, some sides will have personalization and others won't.
+:::
+
 ## Things to know
 
 - Per-user edits and deletes still work: Mocha tracks the webhook that sent each copy and edits/deletes via that webhook.

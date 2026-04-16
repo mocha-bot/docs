@@ -20,6 +20,7 @@ const siteKeywords = [
   'discord server bridge',
   'cross-server messaging',
 ];
+const ogImage = 'img/og-image.svg';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -29,7 +30,7 @@ const config = {
   baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-mocha.svg',
 
   markdown: {
     hooks: {
@@ -46,8 +47,8 @@ const config = {
     locales: ['en'],
   },
 
-  // Extra head tags for SEO — canonical hint, robots, theme color,
-  // structured data for search engines.
+  // Extra head tags for SEO and PWA — canonical hint, robots, theme color,
+  // structured data, manifest, and Apple/mask icon links.
   headTags: [
     {
       tagName: 'meta',
@@ -75,6 +76,42 @@ const config = {
       attributes: {
         rel: 'canonical',
         href: siteUrl,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/manifest.json',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: '/img/logo-mocha.svg',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'mask-icon',
+        href: '/img/logo-mocha.svg',
+        color: '#ffd700',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'apple-mobile-web-app-capable',
+        content: 'yes',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'apple-mobile-web-app-status-bar-style',
+        content: 'black',
       },
     },
     {
@@ -113,8 +150,26 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/mocha-bot/docs/tree/master/docs/',
           showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
-        blog: false,
+        blog: {
+          routeBasePath: 'changelog',
+          path: 'blog',
+          blogTitle: 'Changelog',
+          blogDescription:
+            'Release notes, documentation updates, and behind-the-scenes notes from the Mocha team.',
+          blogSidebarTitle: 'Recent updates',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 10,
+          showReadingTime: false,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            title: 'Mocha Bot Changelog',
+            description:
+              'Release notes and documentation updates for the Mocha Discord bot.',
+            copyright: `Copyright © ${new Date().getFullYear()} Mocha Bot, Inc.`,
+          },
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -122,17 +177,83 @@ const config = {
           lastmod: 'date',
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
         },
       }),
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en'],
+        docsRouteBasePath: '/',
+        indexBlog: true,
+        indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        searchBarShortcutHint: false,
+      }),
+    ],
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: false,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        swRegister: false,
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/logo-mocha.svg',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json',
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: '#000000',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes',
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: 'black',
+          },
+          {
+            tagName: 'link',
+            rel: 'apple-touch-icon',
+            href: '/img/logo-mocha.svg',
+          },
+          {
+            tagName: 'link',
+            rel: 'mask-icon',
+            href: '/img/logo-mocha.svg',
+            color: '#ffd700',
+          },
+        ],
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/logo-mocha.png',
+      image: ogImage,
       metadata: [
         {name: 'description', content: siteDescription},
         {name: 'keywords', content: siteKeywords.join(', ')},
@@ -144,16 +265,18 @@ const config = {
         {property: 'og:title', content: siteTitle},
         {property: 'og:description', content: siteDescription},
         {property: 'og:url', content: siteUrl},
-        {property: 'og:image', content: `${siteUrl}/img/logo-mocha.png`},
-        {property: 'og:image:alt', content: 'Mocha Bot logo'},
+        {property: 'og:image', content: `${siteUrl}/${ogImage}`},
+        {property: 'og:image:alt', content: 'Mocha Bot Documentation'},
+        {property: 'og:image:width', content: '1200'},
+        {property: 'og:image:height', content: '630'},
         {property: 'og:locale', content: 'en_US'},
 
         // Twitter
         {name: 'twitter:card', content: 'summary_large_image'},
         {name: 'twitter:title', content: siteTitle},
         {name: 'twitter:description', content: siteDescription},
-        {name: 'twitter:image', content: `${siteUrl}/img/logo-mocha.png`},
-        {name: 'twitter:image:alt', content: 'Mocha Bot logo'},
+        {name: 'twitter:image', content: `${siteUrl}/${ogImage}`},
+        {name: 'twitter:image:alt', content: 'Mocha Bot Documentation'},
       ],
       colorMode: {
         defaultMode: 'dark',
@@ -167,6 +290,11 @@ const config = {
           src: 'img/logo-mocha.svg',
         },
         items: [
+          {
+            to: '/changelog',
+            label: 'Changelog',
+            position: 'right',
+          },
           {
             href: 'https://mocha-bot.xyz',
             position: 'right',
@@ -202,6 +330,7 @@ const config = {
           {
             title: 'More',
             items: [
+              {label: 'Changelog', to: '/changelog'},
               {label: 'GitHub', href: 'https://github.com/mocha-bot'},
               {
                 label: 'Edit on GitHub',

@@ -37,6 +37,10 @@ This tutorial walks you through everything you need to get Mocha running in a Di
 
 When you're done, the bot will show up in your server member list and be ready to receive slash commands.
 
+:::info Why keep every permission?
+Mocha's relay pipeline uses nearly every permission Discord exposes for a chat bot — cutting one usually breaks a subtle feature (personalization falls back to plain text, edits stop propagating, attachments get stripped). The safe default is to grant the full set.
+:::
+
 ### Permissions cheat sheet
 
 | Permission          | Why Mocha needs it                                                   |
