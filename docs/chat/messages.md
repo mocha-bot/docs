@@ -56,6 +56,10 @@ Editing a message edits its copies in every other channel in the room. There is 
 
 After the window expires the original edit will no longer propagate to followers.
 
+:::warning
+The window is measured from when the message was originally sent, not when you start editing. If you open the edit dialog just before the window closes and hit save a minute later, Mocha has already forgotten about the message and your change will only affect the original channel.
+:::
+
 ## Delete Message
 
 Deleting a message deletes every copy of it in the room, under the same time-window rules as editing.

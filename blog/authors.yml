@@ -1,0 +1,7 @@
+mocha-team:
+  name: Mocha Team
+  title: Mocha Bot maintainers
+  url: https://mocha-bot.xyz
+  image_url: /img/logo-mocha.png
+  socials:
+    github: mocha-bot

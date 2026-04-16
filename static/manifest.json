@@ -1,0 +1,25 @@
+{
+  "name": "Mocha Bot Documentation",
+  "short_name": "Mocha Docs",
+  "description": "Mocha is a Discord bot that links channels across Discord servers into shared rooms. Tutorials, reference docs, and changelog.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/img/logo-mocha.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/logo-mocha.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
