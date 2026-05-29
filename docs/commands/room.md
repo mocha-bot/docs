@@ -132,3 +132,39 @@ Join a room using an invitation code or alias. The channel must not already be c
 ```md
   room invite join <code>
 ```
+
+### Tag
+
+Manage topic tags on the current room. See [Room Tags](/rooms/tags) for the full reference.
+
+All tag subcommands require the channel to be connected to a room. `set` and `remove` are **owner-only**.
+
+#### tag list
+
+Show the tags currently assigned to this room.
+
+**Usage**
+
+```md
+  /room tag list
+```
+
+#### tag set
+
+Open a select menu to assign one or more tags to this room. Only the room owner can use this.
+
+**Usage**
+
+```md
+  /room tag set
+```
+
+#### tag remove
+
+Open a select menu to remove one or more assigned tags. Only the room owner can use this.
+
+**Usage**
+
+```md
+  /room tag remove
+```
