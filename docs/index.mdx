@@ -39,15 +39,27 @@ That channel is now the owner of a new room. Share its ID (or an [invitation cod
 
 ## Reference
 
-- [Commands](/category/commands) — every slash command Mocha understands.
+- [Commands](/category/commands) — every slash command Mocha understands, including `/subscribe`, `/bind`, and `/room tag`.
 - [Chat](/category/chat) — how messages, edits, replies, pins, mentions, and `!tmp` work.
-- [Rooms](/category/rooms) — invitations, ratings, personalization.
+- [Rooms](/category/rooms) — invitations, ratings, personalization, tags.
+- [Donut](/category/donut) — community matchmaking for 1-on-1 and small-group pairing events.
 - [Web](/category/web) — discover public rooms at [mocha-bot.xyz/search](https://mocha-bot.xyz/search) and compare plans on [Pricing](/web/pricing).
+
+## Slash commands summary
+
+| Command | Description |
+| ------- | ----------- |
+| `/help` | List available commands and confirm the bot is alive. |
+| `/room create` | Create a new room in the current channel. |
+| `/room join` | Join an existing room by ID. |
+| `/room disconnect` | Leave the current room. |
+| `/room switch` | Swap rooms in one command. |
+| `/room info` | View room details, ratings, and controls. |
+| `/room invite create/join` | Manage invitation codes. |
+| `/room tag list/set/remove` | Manage topic tags on the room. |
+| `/subscribe` | View your server plan and subscribe to a premium plan. |
+| `/bind` | Link your Discord account to your Mocha SSO account. |
 
 ## Reporting issues
 
 If you're having issues with the bot, check the [Frequent Searches](/others/frequent-searches) page. If you can't find a solution, join the [support server](https://discord.mocha-bot.xyz/) and ask for help there.
-
-## Making suggestions
-
-Use the [`/feedback`](/commands/feedback) slash command from any server the bot is in, or drop a message in the [support server](https://discord.mocha-bot.xyz/).
