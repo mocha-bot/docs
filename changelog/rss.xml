@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Mocha Bot Changelog</title>
+        <link>https://docs.mocha-bot.xyz/changelog</link>
+        <description>Release notes and documentation updates for the Mocha Discord bot.</description>
+        <lastBuildDate>Thu, 16 Apr 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <copyright>Copyright © 2026 Mocha Bot, Inc.</copyright>
+        <item>
+            <title><![CDATA[Documentation Refresh — Tutorials, Dark Theme, Search]]></title>
+            <link>https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026</link>
+            <guid>https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026</guid>
+            <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We rebuilt the Mocha documentation site from the ground up — new tutorials, dark theme, local search, and every feature documented with examples and troubleshooting.]]></description>
+            <content:encoded><![CDATA[<p>The Mocha documentation site just got a full refresh. Every feature is now documented, the theme matches the main mocha-bot.xyz site, and there's a proper tutorial track for people getting started with the bot.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-new">What's new<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#whats-new" class="hash-link" aria-label="Direct link to What's new" title="Direct link to What's new" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tutorials">Tutorials<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#tutorials" class="hash-link" aria-label="Direct link to Tutorials" title="Direct link to Tutorials" translate="no">​</a></h3>
+<p>There's a new <strong>Tutorials</strong> section with four step-by-step walkthroughs that take you from "I've never used this bot" to "I'm moderating a cross-server room":</p>
+<ul>
+<li class=""><strong><a class="" href="https://docs.mocha-bot.xyz/tutorials/getting-started">Getting Started</a></strong> — invite the bot, set up permissions, create your first room.</li>
+<li class=""><strong><a class="" href="https://docs.mocha-bot.xyz/tutorials/connect-two-servers">Connect Two Servers</a></strong> — bridge two Discord servers end-to-end with a test checklist.</li>
+<li class=""><strong><a class="" href="https://docs.mocha-bot.xyz/tutorials/share-via-invite">Share a Room via Invitation</a></strong> — the full invitation flow with aliases, usage caps, and expiration.</li>
+<li class=""><strong><a class="" href="https://docs.mocha-bot.xyz/tutorials/curate-your-room">Curate Your Room</a></strong> — editing details, kicking channels, enabling personalization, deleting rooms.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="full-feature-coverage">Full feature coverage<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#full-feature-coverage" class="hash-link" aria-label="Direct link to Full feature coverage" title="Direct link to Full feature coverage" translate="no">​</a></h3>
+<p>Every slash command, chat behavior, and room feature now has its own reference page with:</p>
+<ul>
+<li class="">Exact parameters with types and whether they're required.</li>
+<li class="">What the bot does under the hood (without dragging in implementation details).</li>
+<li class="">A troubleshooting table for the errors you're most likely to hit.</li>
+<li class="">Cross-links so you can hop from a command to the concept behind it.</li>
+</ul>
+<p>That includes <code>/feedback</code> (new), the full <code>/room invite</code> subcommand group, typing indicators, reply threading, pins, ratings, and personalization.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="dark-theme-to-match-the-main-site">Dark theme to match the main site<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#dark-theme-to-match-the-main-site" class="hash-link" aria-label="Direct link to Dark theme to match the main site" title="Direct link to Dark theme to match the main site" translate="no">​</a></h3>
+<p>The docs site now uses the same visual language as <a href="https://mocha-bot.xyz/" target="_blank" rel="noopener noreferrer" class="">mocha-bot.xyz</a>: pure black background, Plus Jakarta Sans, gold accents, glass surfaces, blurred navbar. Dark mode is the only mode — no more accidental light-mode flashes when following links out of the main site.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-search">Local search<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#local-search" class="hash-link" aria-label="Direct link to Local search" title="Direct link to Local search" translate="no">​</a></h3>
+<p>There's a search bar in the navbar now. It indexes every page at build time — no third-party service, no approval process, instant results.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="seo-and-sharing">SEO and sharing<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#seo-and-sharing" class="hash-link" aria-label="Direct link to SEO and sharing" title="Direct link to SEO and sharing" translate="no">​</a></h3>
+<ul>
+<li class="">Per-page Open Graph and Twitter card metadata so shared links render properly in Discord, Slack, and Twitter.</li>
+<li class="">A site-wide schema.org <code>WebSite</code> JSON-LD block plus the automatic <code>BreadcrumbList</code> structured data Docusaurus ships.</li>
+<li class="">A generated sitemap and a <code>robots.txt</code> pointing at it.</li>
+<li class="">A custom 404 page with links to the tutorials, commands reference, and FAQ.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="under-the-hood">Under the hood<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#under-the-hood" class="hash-link" aria-label="Direct link to Under the hood" title="Direct link to Under the hood" translate="no">​</a></h3>
+<ul>
+<li class="">Docusaurus v3 (up from v2 RC).</li>
+<li class="">PWA enabled — you can install the docs as an app.</li>
+<li class="">CI runs <code>yarn build</code> and link-checks every pull request.</li>
+<li class="">Dependabot watches for updates so nothing rots.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What's next<a href="https://docs.mocha-bot.xyz/changelog/documentation-refresh-2026#whats-next" class="hash-link" aria-label="Direct link to What's next" title="Direct link to What's next" translate="no">​</a></h2>
+<p>If you spot something missing, wrong, or confusing, let us know via the in-bot <code>/feedback</code> command or drop a message in the <a href="https://discord.mocha-bot.xyz/" target="_blank" rel="noopener noreferrer" class="">support server</a>. This site is living documentation — the more you tell us where it breaks, the better it gets.</p>]]></content:encoded>
+            <category>docs</category>
+            <category>release</category>
+        </item>
+    </channel>
+</rss>

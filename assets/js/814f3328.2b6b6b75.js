@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent updates","items":[{"title":"Documentation Refresh \u2014 Tutorials, Dark Theme, Search","permalink":"/changelog/documentation-refresh-2026","unlisted":false,"date":"2026-04-16T00:00:00.000Z"}]}')}}]);
