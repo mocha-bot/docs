@@ -46,7 +46,7 @@ Plans and add-ons support the following billing types:
 
 ## Payment
 
-Payments are processed through multiple providers for reliability. The active provider options for each plan are shown on the pricing page and in the `/subscribe` command.
+Payments are processed securely through Whop. The checkout options for each plan are shown on the pricing page and in the `/subscribe` command.
 
 ## Subscribing
 
