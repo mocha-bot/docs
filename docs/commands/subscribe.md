@@ -46,6 +46,10 @@ Run this in any channel where the bot is present. The response is **ephemeral** 
 
 Only features that are **active** on your server appear in the embed.
 
+**Personal plan**
+
+Use the `destination` option to choose what the plan applies to: `guild` (the default, your server), `room` (the room linked to the current channel) or `user` (you). With `destination:user`, the **Your Personal Plan** embed lists the features from the personal plans linked to your Discord account, including ones you paid for on the dashboard.
+
 ## When to use it
 
 - **Check your plan** — quickly see which features your server has without opening a browser.
