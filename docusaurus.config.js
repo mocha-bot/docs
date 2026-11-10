@@ -186,8 +186,7 @@ const config = {
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
-      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
-      ({
+      {
         hashed: true,
         language: ['en'],
         docsRouteBasePath: '/',
@@ -196,7 +195,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 10,
         searchBarShortcutHint: false,
-      }),
+      },
     ],
     [
       '@docusaurus/plugin-pwa',
