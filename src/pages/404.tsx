@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {type ReactNode} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './404.module.css';
 
-export default function NotFound(): JSX.Element {
+export default function NotFound(): ReactNode {
   return (
     <Layout
       title="Page not found"
