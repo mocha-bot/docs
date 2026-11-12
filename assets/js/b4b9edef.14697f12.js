@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[360],{903:a=>{a.exports=JSON.parse('{"authors":[{"name":"Mocha Team","title":"Mocha Bot maintainers","url":"https://mocha-bot.xyz","socials":{"github":"https://github.com/mocha-bot"},"imageURL":"/img/logo-mocha.png","key":"mocha-team","page":null,"count":1}]}')}}]);
